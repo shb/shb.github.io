@@ -1,51 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8"/>
     <title>Simone Cociancich (shb) on GitHub</title>
+    <meta name="viewport" content="width:device-width"/>
     <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/cerulean/bootstrap.min.css" rel="alternate stylesheet" title="cerulean">
     <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/slate/bootstrap.min.css" rel="stylesheet" title="slate">
     <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.2/cyborg/bootstrap.min.css" rel="alternate stylesheet" title="cyborg">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" async></script>
-    <style>
-.row { margin-bottom:20px; }
-.row section { margin-bottom:20px; }
-
-.matrix, .vector { margin:28px 5ex 0; width:auto; position:relative; }
-.matrix:before, .vector:before, .matrix:after, .vector:after
- { position:absolute; top:-12px; font-size:76px; line-height:1; }
-.matrix:before { left:-0.75ex; content:"{"; }
-.matrix:after { right:-0.75ex; content:"}"; }
-.vector:before { left:-0.75ex; content:"["; }
-.vector:after { right:-0.75ex; content:"]"; }
-table.matrix { background-color:transparent; }
-ul.vector { list-style-type:none; padding-left:0; }
-
-body header h1 { letter-spacing:8px; }
-body header h1 small { letter-spacing:0; }
-
-#uniform a { display:inline-block; width:1em; height:1em; border:1px solid #888;
- vertical-align:middle; }
-#uniform-cerulean { background-color:white; }
-#uniform-slate { background-color:#272b30; }
-#uniform-cyborg { background-color: #060606; }
-
-#contact { margin-top:28px; line-height: 62px; vertical-align:middle; }
-
-#languages { clear:left; }
-
-#main-skills h4 { white-space:pre-line; }
-#main h4 .lead { font-family:"Cabin",Arial,sans,sans-serif; line-height:49px; }
-    </style>
   </head>
   <body class="container">
-    <header>
+    <header id="header">
       <hgroup class="pull-left">
-        <h1>
+        <h1><a href="index.html">
           shb<br/>
-          <small>hacker</small>
-        </h1>
+          <small title="&ne; cracker">hacker</small>
+        </a></h1>
       </hgroup>
       <table id="identity" class="matrix pull-left">
         <tr>
@@ -61,25 +34,64 @@ body header h1 small { letter-spacing:0; }
           <td><a><i class="fa"></i></a></td>
         </tr>
       </table>
-      <ul id="uniform" class="vector pull-left">
+      <ul id="uniform" class="column vector pull-left">
         <li><a id="uniform-cerulean" data-style="cerulean"></a></li>
         <li><a id="uniform-slate" data-style="slate"></a></li>
-        <li><a id="uniform-cyborg" data-style="cerulean"></a></li>
+        <li><a id="uniform-cyborg" data-style="cyborg"></a></li>
       </ul>
       <div id="languages">
-        <code>IO = "italian" | "english" | 'html' | 'css' | 'javascript'</code>
+        <br/>
+        <code>IO = <a href="#it">"italian"</a> | <a href="#en">"english"</a> | 'javascript' | 'html' | 'css'</code>
       </div>
     </header>
     <div id="main" class="row">
-      <!--<div class="col-sm-4">
-        <h3 class="page-header">Updates</h3>
+      <div class="col-sm-4">
+        <h3 class="page-header">Skills</h3>
+        <dl>
+          <dt>Advanced Javascript programming</dt>
+            <dd>Both browser-side and server-side</dd>
+          <dt>Advanced HTML5 and CSS3</dt>
+            <dd></dd>
+          <dt>PHP, and other programming languages</dt>
+            <dd>C#.NET, Perl, and anything that comes at hand</dd>
+        </dl>
+        <h3>Services</h3>
+        <dl>
+          <dt>Setup and customization of CMS's</dt>
+            <dd>Such as: WordPress, Perch, Magento</dd>
+          <dt>Development and management of web sites and applications</dt>
+            <dd>Implementation of custom graphic templates</dd>
+            <dd>Creation and customization of custom components</dd>
+        </dl>
+      </div>
+      <div class="col-sm-4">
+        <h3 class="page-header">Projects</h3>
+        <h4>Clients Projects</h4>
+        <ul class="pager">
+          <li class="next">
+            <a href="clients.html">View all...</a>
+          </li>
+        </ul>
+        <h4>Free Software</h4>
+        <ul class="pager">
+          <li class="next">
+            <a href="repos.html">View all...</a>
+          </li>
+        </ul>
       </div>
       <div class="col-sm-4">
         <h3 class="page-header">Bio</h3>
       </div>
-      <div class="col-sm-4">
-        <h3 class="page-header">Projects</h3>
-      </div>-->
     </div>
+    <div class="row">
+    <footer id="colophon" class="col-xs-12
+     col-sm-10 col-sm-offset-1
+     col-md-8 col-md-offset-1
+     col-lg-6 col-lg-offset-3">
+      <hr/>
+      <p>This site made awesome by Bootstrap and &mdash;you name it&mdash; Font Awesome.</p>
+      <p>Graciously hosted on GitHub.</p>
+    </footer></div>
+    <script src="scripts.js" async></script>
   </body>
 </html>
