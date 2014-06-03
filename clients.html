@@ -65,7 +65,14 @@
         </div>
         <div id="italianvoices-details" class="media-details mfp-hide col-sm-10 col-sm-offset-1 well clearfix">
           <div class="page-header">
-            <h4 class="page-title">Italian Voices&emsp;<small>Company site &ndash; Quote generator</small></h4>
+            <small class="pull-right contractors">
+              Dotis
+            </small>
+            <h4 class="page-title">
+              <a href="http://www.italianvoices.it" title="View website"
+               onclick="return confirm('NOTICE\n\nDue to commercial reasons, this site is viewable only from outside Italy.')">Italian Voices&ensp;<i class="fa fa-external-link"></i></a>
+              <small>&emsp; Company site &ndash; Quote generator</small>
+            </h4>
           </div>
           <div class="col-sm-4">
             <dl class="dl-horizontal">
@@ -94,7 +101,7 @@
           <img class="media-object" src="images/projects/clients/arredidea_thumb.jpg" width="256" height="144" alt="Screenshot">
         </a>
         <div class="media-body">
-          <h4 class="media-heading"><a href="http://ww.arredidea.it">Arredidea</a></h4>
+          <h4 class="media-heading">Arredidea</h4>
           <dl class="dl-horizontal">
             <dt>Type</dt><dd>Company Site &amp; Online Configurator app</dd>
             <dt>Tech</dt><dd>Perch, THREE.js</dd>
@@ -102,7 +109,14 @@
         </div>
         <div id="arredidea-details" class="media-details mfp-hide col-sm-10 col-sm-offset-1 well clearfix">
           <div class="page-header">
-            <h4 class="page-title">Arredidea&emsp;<small>Company site &ndash; 3D configurator</small></h4>
+            <small class="pull-right contractors">
+              MED
+            </small>
+            <h4 class="page-title">
+              <a href="http://www.arredidea.it" title="View website">
+                Arredidea&ensp;<i class="fa fa-external-link"></i></a>
+              <small>&emsp;Company site &ndash; 3D configurator</small>
+            </h4>
           </div>
           <div class="col-sm-4">
             <dl class="dl-horizontal">
@@ -128,7 +142,7 @@
           <img class="media-object" src="images/projects/clients/tgd_thumb.jpg" width="256" height="144" alt="Site screenshot">
         </a>
         <div class="media-body">
-          <h4 class="media-heading"><a href="http://www.tgd.it">TGD</a></h4>
+          <h4 class="media-heading">TGD</h4>
           <dl class="dl-horizontal">
             <dt>Type</dt><dd>Company Site</dd>
             <dt>Tech</dt><dd>Joomla!, MooTools</dd>
@@ -136,7 +150,14 @@
         </div>
         <div id="tgd-details" class="media-details mfp-hide col-sm-10 col-sm-offset-1 well clearfix">
           <div class="page-header">
-            <h4>Thermo Glass Door&emsp;<small>Company site</small></h4>
+            <small class="pull-right contractors">
+              Idee &amp; Parole&ensp;+&ensp;Dotis
+            </small>
+            <h4>
+              <a href="http://www.tgd.it" title="View website">
+                Thermo Glass Door&ensp;<i class="fa fa-external-link"></i></a>
+              <small>&emsp;Company site</small>
+            </h4>
           </div>
           <div class="col-sm-6 col-md-5 col-lg-4">
             <dl class="dl-horizontal">
@@ -168,6 +189,12 @@
       <p>This site made awesome by Bootstrap and &mdash;you name it&mdash; Font Awesome.</p>
       <p>Graciously hosted on GitHub.</p>
     </footer></div>
-    <script src="scripts.js" async></script>
+    <script src="scripts.js"></script>
+    <script defer type="text/javascript">$(function() {
+      // Open detail panel if hash specified
+      var hash = window.location.hash;
+      if ($('a[href="'+hash+'"]'))
+        $('a[href="'+hash+'"]').trigger('click');
+    })</script>
   </body>
 </html>
