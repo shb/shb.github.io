@@ -48,29 +48,30 @@
     </header>
     <div id="main" class="row">
       <div class="col-sm-6 col-lg-4 clearfix">
-        <style type="text/css" scoped>
-          dt { margin-top:1ex; }
-        </style>
         <h3 class="page-header">Skills</h3>
         <dl>
           <dt>Advanced Javascript programming</dt>
             <dd>Both browser-side and server-side</dd>
+            <dd>Jquery, AngularJs, NodeJs, Express</dd>
           <dt>Advanced HTML5 and CSS3</dt>
-            <dd></dd>
+            <dd>Bootstrap, Jade</dd>
           <dt>PHP, and other programming languages</dt>
             <dd>C#.NET, Perl, and anything that comes at hand</dd>
         </dl>
         <h3>Services</h3>
         <dl>
+          <dt>Development and management of web applications and sites</dt>
+            <dd>Implementation of custom graphic templates</dd>
+            <dd>Custom components development</dd>
+            <dd>Content management</dd>
           <dt>Setup and customization of CMS's</dt>
             <dd>Such as: WordPress, Perch, Magento</dd>
-          <dt>Development and management of web sites and applications</dt>
-            <dd>Implementation of custom graphic templates</dd>
-            <dd>Creation and customization of custom components</dd>
+          <dt>Server administration</dt>
+            <dd>Linux, Apache, Nginx, MySQL</dd>
         </dl>
       </div>
       <div class="col-sm-6 col-lg-4">
-        <h3 class="page-header">Highlighted projects</h3>
+        <h3 class="page-header">Work</h3>
         <h4>Client projects</h4>
       <div class="media">
         <a class="pull-left" href="images/projects/clients/italianvoices.jpg">
@@ -93,31 +94,40 @@
           </li>
         </ul>
         <h4>Free Software</h4>
+        <p>Some small personal projects and forks on github...</p>
         <ul class="pager">
           <li class="next">
             <a href="repos.html">View all...</a>
           </li>
         </ul>
       </div>
-      <div class="col-lg-4">
+      <div class="col-xs-12 col-lg-4" style="float:left">
         <h3 class="page-header">Bio</h3>
         <div class="row">
-          <div class="col-lg-12 col-xs-4">
-            <img data-src="holder.js/100x100" class="pull-right"/>
-            <address>
-              Simone Cociancich<br/>
-              Via Bartolomeo D'Alviano 88<br/>
-              34144 Trieste<br/>
-              Italy<br/>
+          <div class="vcard col-lg-12 col-sm-4">
+            <img src="images/picture.jpg" class="pull-right img-rounded photo" style="width:33%; max-width:128px; height:auto;"/>
+            <p class="lead fn">Simone Cociancich</p>
+            <address class="adr">
+              <span class="street-address">Via Bartolomeo D'Alviano 88</span><br/>
+              <span class="postal-code">34144</span> <span class="locality">Trieste</span><br/>
+              <span class="country-name">Italy</span><br/>
             </address>
           </div>
-          <div class="col-lg-12 col-xs-4">
+          <div class="col-lg-12 col-sm-4">
             <h4>Work Experience</h4>
-            Coming soon
+            <dl>
+              <dt>Freelance developer</dt>
+              <dd>08/2011 &ndash; <span class="today">today</span></dt>
+              <dt>Developer @ Cubeyou</dt>
+              <dd>05/2010 &ndash; 05/2011</dd>
+            </dl>
           </div>
-          <div class="col-lg-12 col-xs-4">
+          <div class="col-lg-12 col-sm-4">
             <h4>Education</h4>
-            Coming soon
+            <dl>
+              <dt>BSc Computer Science @ Università degli Studi di Trieste</dt>
+              <dd>16/12/2009</dd>
+            </dl>
           </div>
         </div>
       </div>
@@ -128,16 +138,26 @@
      col-md-8 col-md-offset-1
      col-lg-6 col-lg-offset-3">
       <hr/>
-      <p>Site made awesome by Bootstrap and &mdash;you name it&mdash; Font Awesome.</p>
-      <p>Graciously hosted on GitHub.</p>
+      <p>Site made awesome by
+        <a href="http://getbootstrap.com/" title="Bootstrap 3.x">Bootstrap</a>
+        and &mdash;you name it&mdash;
+        <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></p>
+      <p>Graciously hosted by <a href="//github.com">GitHub</a></p>
+      <details><p>
+        <summary>More credits:</summary>
+        <cite><a href="http://alistapart.com/article/alternate">Style switcher script</a></cite>
+        by <a href="http://alistapart.com/author/paulsowden">Paul Sowden</a>
+      </p></details>
     </footer></div>
     <script src="scripts.js" async></script>
-    <script>$(function(){
+    <script>
+var today = new Date;
+today = (today.getMonth()+1) + "/" + today.getFullYear();
 
-$.get('http://www.google.com/search?q=coch.webbyapp.com:poesie', function(html) {
-  console.log(arguments)
-})
+$(function(){
 
-    })</script>
+  $(".today").text( today );
+
+})</script>
   </body>
 </html>

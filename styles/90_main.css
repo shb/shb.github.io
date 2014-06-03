@@ -13,9 +13,10 @@ ul.vector { list-style-type:none; padding-left:0; }
 
 body header h1 { letter-spacing:0.5ex; padding-top:0.5em; }
 body header h1 small { letter-spacing:0; }
-body header h2 { font-size:36px; text-transform:lowercase; margin-left:0.5ex; margin-right:0.5ex; }
+body header h2 { font-size:36px; text-transform:lowercase; /*margin-left:0.5ex; margin-right:0.5ex;*/ }
 
 code a { color:inherit; }
+dl dd + dt, .dl-horizontal dt + dd  { margin-top:1ex; }
 
 .media img { max-width:192px; height:auto; max-height:104px; }
 .media-body .dl-horizontal dt { max-width:2.5em; text-align:left; }
@@ -23,7 +24,6 @@ code a { color:inherit; }
 
 .mfp-content .dl-horizontal dt { max-width:6em; }
 .mfp-content .dl-horizontal dd { margin-left:7em; }
-.mfp-content .dl-horizontal dt + dd, .mfp-content .dl-horizontal dd + dt { margin-top:1ex; }
 
 #identity { text-align:center; }
 
